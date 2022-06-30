@@ -197,7 +197,7 @@
 .about[data-scroll="in"]{
   opacity: 1;
   transform:translateY(3px);
-  transition: transform 0.5s;
+  transition: transform 0.5s , opacity 0.5s;
   transition-delay: 0.4s;
   visibility:visible;
 }
@@ -211,7 +211,7 @@
 .works[data-scroll="in"],.navLogo{
   opacity: 1;
   transform:translateY(3px);
-  transition: transform 0.5s;
+  transition: transform 0.5s , opacity 0.5s;
   transition-delay: 0.8s;
   visibility:visible;
 }
@@ -225,7 +225,7 @@
 .contact[data-scroll="in"]{
   opacity: 1;
   transform:translateY(3px);
-  transition: transform 0.5s;
+  transition: transform 0.5s , opacity 0.5s;
   transition-delay: 1.2s;
   visibility:visible;
 }
@@ -239,7 +239,7 @@
 .resume[data-scroll="in"]{
   opacity: 1;
   transform:translateY(3px);
-  transition: transform 0.5s;
+  transition: transform 0.5s , opacity 0.5s;
   transition-delay: 1.6s;
   visibility:visible;
 }
