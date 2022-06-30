@@ -1,5 +1,7 @@
 import React from 'react';
 import { IoClose } from 'react-icons/io5';
+import { FiLinkedin } from 'react-icons/fi';
+import { VscGithubAlt } from 'react-icons/vsc';
 
 const Mobile = (props) => {
     return (
@@ -23,7 +25,15 @@ const Mobile = (props) => {
                     <a href="/assets/Divya_Kumar_Baid.pdf" className="mobileLinks resumeMobile">
                         <span className="numbering">04.</span>
                         <span className="listItem">Resume</span>
+                </a>
+                <div className="profileLinks">
+                    <a href='https://github.com/DivyaKumarBaid'>
+                        <VscGithubAlt className="profileIcons" />
                     </a>
+                    <a href="https://www.linkedin.com/in/divya-kumar-baid-98a087200/">
+                        <FiLinkedin className="profileIcons" />
+                        </a>
+                </div>
             </div>
         </div>
     );

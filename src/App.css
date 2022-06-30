@@ -296,6 +296,13 @@
   font-family: 'Space Mono', monospace;
   letter-spacing: 2px;
  }
+
+ .profileLinks{
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ }
  
 /* mobilenav */
 
