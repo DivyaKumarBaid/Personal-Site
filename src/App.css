@@ -9,6 +9,8 @@
 /* font-family: 'Martel Sans', sans-serif; */
 /* font-family: 'Space Mono', monospace; */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
 /* google fonts */
 
 [data-scroll] {
@@ -23,6 +25,7 @@
  
 :root {
   --backgorund: rgb(11, 17, 31);
+  --backgorundLight: rgb(35, 50, 87);
   --backgorundBlur: rgb(11, 17, 31,0.8);
   --white: #ffffff;
   --slateblue :#0e2841 ;
@@ -160,7 +163,7 @@
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
   padding-bottom:25px ;
   font-family: 'Space Mono', monospace;
-  font-size: 1.8vh;
+  font-size: 1.9vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -382,7 +385,79 @@
 /* home animation */
 /* home */
 
-/* navbar */
+/* about */
+.aboutSection{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* color: white; */
+}
+.headingAbout{
+  max-width: 50vw;
+  padding: 45px;
+}
+.headingAbout hr{
+  color: var(--pinkred);
+}
+.titleAbout{
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hrLine{
+  margin: 15px;
+  width: 50%;
+  height: 2px;
+  background-color: var(--pinkred);
+  opacity: 0.6;
+}
+.aboutNo{
+  color: var(--pinkred);
+  font-size: 25px;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 2px;
+}
+.aboutHead{
+  margin-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  color: var(--light2);
+}
+.aboutPara{
+  text-align: justify;
+  color: var(--light4);
+  letter-spacing: 5px;
+}
+.aboutImg{
+  width: max-content;
+}
+.aboutImg img{
+  width: 18vw;
+}
+
+/* about animation */
+.aboutSection{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+  transition: transform 1s,opacity 1s,visibility 1s;
+  transition-delay: 0.8s;
+}
+.aboutSection[data-scroll='in']{
+  opacity: 1;
+  visibility: visible;
+  transform:translateY(15px);
+  transition: transform 1s,opacity 1s,visibility 1s;
+  transition-delay: 0.8s;
+}
+
+/* about animation */
+
+/* about */
 
 /* optimise for phone */
 
@@ -394,7 +469,9 @@
   /* overlay */
 
   /* nav */
-
+  .navbar{
+    padding-bottom:0;
+  }
   .navLogo{
     width: 4vw;
     margin: 25px;
@@ -432,4 +509,28 @@
     font-size: 1.8vh;
   }
   /* home */
+
+  /* about */
+
+  .headingAbout,.aboutSection{
+    width: 100%;
+    max-width: 100%;
+  }
+  .aboutHead{
+    font-size:5vw;
+  }
+  .aboutNo{
+    font-size: 3.1vw;
+  }
+  .aboutImg{
+    margin:30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutImg img{
+    width: 50%;
+  }
+  /* about */
 }

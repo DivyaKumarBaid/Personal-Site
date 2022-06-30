@@ -6,12 +6,13 @@ import { useEffect } from "react";
 import Home from './components/Home';
 import React from 'react';
 import Mobile from './components/Mobile';
+import About from './components/About';
 
 function App() {
 
   useEffect(() => {
     ScrollOut({
-      targets: '.navLinks,.navLogo,.home'
+      targets: '.navLinks,.navLogo,.home,.aboutSection'
     });
   }, []);
   
@@ -25,6 +26,7 @@ function App() {
       <Overlay />
       <NavBar toggle={toggleMenu} />
       <Home />
+      <About/>
     </div>
   );
 }
