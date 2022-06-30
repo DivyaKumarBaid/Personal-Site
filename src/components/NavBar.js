@@ -1,11 +1,27 @@
 import React from 'react';
+import { CgMenuRightAlt} from 'react-icons/cg'
+
+const NavBar = (props) => {
+
+    const [width, setWidth] = React.useState(window.innerWidth);
+
+// listen to window resize for mobile view
+    React.useEffect(() => {
+        function handleResize() {
+          setWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return () => {
+          window.removeEventListener('resize', handleResize)
+        }
+    })
+// listen to window resize for mobile view
 
 
-const NavBar = () => {
     return (
         <div className='navbar'>
             <img src="/assets/logo.svg" alt="" className='navLogo' />
-            <div className="navSections">
+            {width>600 ? <div className="navSections">
                     <a href="www.google.com" className="navLinks about">
                         <span className="numbering">    01.
                         </span>
@@ -27,14 +43,16 @@ const NavBar = () => {
                             Contact
                         </span>
                     </a>
-                    <a href="" className="navLinks resume">
+                    <a href="/assets/Divya_Kumar_Baid.pdf" className="navLinks resume">
                         <span className="numbering">    04.
                         </span>
                         <span className="listItem">
                             Resume
                         </span>
                     </a>
-            </div>
+            </div> :
+            <CgMenuRightAlt className='menuBtn' onClick={() => {props.toggle()}}/>
+            }
         </div>
     );
 }

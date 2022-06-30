@@ -23,6 +23,7 @@
  
 :root {
   --backgorund: rgb(11, 17, 31);
+  --backgorundBlur: rgb(11, 17, 31,0.8);
   --white: #ffffff;
   --slateblue :#0e2841 ;
   --deepblue:#0c111a ;
@@ -193,6 +194,7 @@
   transition: all 0.2s;
 }
 
+
 /* about link*/
 .about{
   transform:translateY(-3px);
@@ -250,12 +252,59 @@
 }
 /* resume link*/
 
+/* mobilenav */
+
+.mobileMenu{
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  background-color: var(--backgorundBlur);
+  backdrop-filter: blur(5px);
+}
+.closeContainer{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.menuBtn{
+  color: white;
+  margin: 15px;
+  font-size: 25px;
+ }
+ .navClose{
+  color: white;
+  font-size: 30px;
+  margin-top:20px;
+  margin-right: 15px;
+ }
+
+ .mobileList{
+  width: 100%;
+  height: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .mobileList a{
+  margin: 35px;
+  font-size:25px;
+ }
+ 
+/* mobilenav */
+
+/* nav */
+
 /* home */
 
 .home{
   height: 100vh;
   width: 100%;
   /* color: white; */
+  text-align: left;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -265,6 +314,7 @@
   margin: 2vh;
 }
 .greet{
+  margin-left: 2px;
   font-family: 'Space Mono', monospace;
   letter-spacing: 2px;
   color: var(--pinkred);
@@ -333,6 +383,15 @@
     display: none;
   }
   /* overlay */
+
+  /* nav */
+
+  .navLogo{
+    width: 4vw;
+    margin: 25px;
+  }
+
+  /* nav */
 
   /* home */
 

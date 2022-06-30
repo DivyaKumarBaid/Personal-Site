@@ -15,7 +15,7 @@ const Home = () => {
                     I am a WEB Explorer.
                 </div>
                 <div className="desc">
-                    I'm a Full-Stack Developer and a maniac when it comes to Tech. I build things for WEB and design occasionally.
+                    I'm a Full-Stack Developer and a Maniac when it comes to Tech. I build things for WEB and design occasionally.
                 </div>
             </div>
         </div>
