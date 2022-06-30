@@ -1,38 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+/* google fonts */
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+ 
+:root {
+  --backgorund: rgb(11, 17, 31);
+  --white: #ffffff;
+  --slateblue :#0e2841 ;
+  --deepblue:#0c111a ;
+  --maroon:#230911;
+  --darkbrown:#510f1a; 
+  --pinkred:#f74a59;
+  --light1:#f4e9ea; 
+  --light2:#f4dfe2; 
+  --light3:rgba(255, 255, 255, 0.7); 
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(12, 16, 26);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pinkred);
+}
+
+/* scroll bar */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  height: 300vh;
+  width: 100%;
+  background: var(--backgorund);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* overlay */
+.overlay{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlayLeft{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58vh;
+  padding-left: 2.2vw;
+}
+.overlayIcons{
+  margin: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.overlayRight{
+  margin-top: 60vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color:var(--light3);
+  margin-left:85vw;
+}
+.emailAdd{
+  transform: rotate(90deg);
+}
+.verticleLine{
+  margin-top: 1vh;
+}
+.verticleLine,.verticleLineRight{
+  width: 1px;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.649);
+}
+.verticleLineRight{
+  margin-top: 11vh;
+  margin-right: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.overlayIcons{
+  transition: all 0.3s;
+  font-size: 25px;
+  color: var(--light3);  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlayIcons:hover,.emailAdd:hover{
+  color: var(--pinkred);
+  transition: all 0.3s;
+}
+
+.verticleLine:hover,.verticleLineRight:hover{
+  transition: all 0.3s;
+  background-color: rgba(102, 51, 153, 0);
+}
+.verticleLine:hover::before,.verticleLineRight:hover::before{
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.verticleLine::before,.verticleLineRight::before{
+  transition: all 0.3s;
+  opacity: 0;
+  content: '';
+  background-color: var(--pinkred);
+  width: 2px;
+  height: 30vh;
+  position: absolute;
+  z-index: -1;
+}
+/* overlay */
+
+
+/* navbar */
+
+.navbar{
+  background-color: rgba(11, 17, 31, 0.259);
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom:25px ;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLogo{
+  margin-top: 20px;
+  margin-left: 3vw;
+  width: 1.5vw;
+}
+.navSections{
+  margin-top: 20px;
+  margin-right:3vw ;
+  color: var(--light1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbering{
+  color: var(--pinkred);
+  margin-right:6px ;
+}
+
+.navLinks{
+  margin-right:2vw ;
+  margin-left:2vw ;
+}
+
+.listItem:hover{
+  color: var(--pinkred);
+  transition: all 0.2s;
+}
+
+/* about link*/
+.about{
+  transform:translateY(-3px);
+  opacity: 0;
+  visibility: hidden;
+}
+.about[data-scroll="in"]{
+  opacity: 1;
+  transform:translateY(3px);
+  transition: all 0.5s;
+  transition-delay: 0.4s;
+  visibility:visible;
+}
+/* about link*/
+/* works link*/
+.works,.navLogo{
+  transform:translateY(-3px);
+  opacity: 0;
+  visibility: hidden;
+}
+.works[data-scroll="in"],.navLogo{
+  opacity: 1;
+  transform:translateY(3px);
+  transition: all 0.5s;
+  transition-delay: 0.8s;
+  visibility:visible;
+}
+/* works link*/
+/* contact link*/
+.contact{
+  transform:translateY(-3px);
+  opacity: 0;
+  visibility: hidden;
+}
+.contact[data-scroll="in"]{
+  opacity: 1;
+  transform:translateY(3px);
+  transition: all 0.5s;
+  transition-delay: 1.2s;
+  visibility:visible;
+}
+/* contact link*/
+/* resume link*/
+.resume{
+  transform:translateY(-3px);
+  opacity: 0;
+  visibility: hidden;
+}
+.resume[data-scroll="in"]{
+  opacity: 1;
+  transform:translateY(3px);
+  transition: all 0.5s;
+  transition-delay: 1.6s;
+  visibility:visible;
+}
+/* resume link*/
+
+/* navbar */
+
+/* optimise for phone */
+
+@media screen and (max-width:600px) {
+
+  
+/* overlay */
+.overlayRight{
+  display: none;
+}
+/* overlay */
 }
