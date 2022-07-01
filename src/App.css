@@ -396,7 +396,7 @@
   /* color: white; */
 }
 .headingAbout{
-  max-width: 50vw;
+  max-width: 45vw;
   padding: 45px;
 }
 .headingAbout hr{
@@ -428,6 +428,7 @@
   color: var(--light2);
 }
 .aboutPara{
+  margin-top: 20px;
   text-align: justify;
   color: var(--light4);
   letter-spacing: 5px;
@@ -465,9 +466,16 @@
   font-size: 0.5em;
 }
 .toolsList{
+  margin: 12px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+}
+.toolsList ol{
+  margin-right: 15vw;
+}
+.toolsList ol li{
+  padding-left: 12px;
 }
 
 /* about animation */
@@ -532,13 +540,14 @@
     max-width: 100%;
   }
   .aboutHead{
-    font-size:5vw;
+    font-size:4.8vw;
   }
   .aboutNo{
-    font-size: 3.1vw;
+    font-size: 3vw;
   }
   .aboutImg{
     margin:30px;
+    margin-top:60px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -546,6 +555,14 @@
   }
   .aboutImg img{
     width: 50%;
+  }
+
+  .aboutPara{
+    text-align: left;
+  }
+  
+  .hrLine{
+    width: 40%;
   }
   /* about */
 }

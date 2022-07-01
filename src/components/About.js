@@ -18,7 +18,7 @@ export default function About() {
           Fast Forward to today I am a working member of a student led Technical Club CUrBrain of Techno Main Salt Lake. I have participated in several Hackathons and have experience in Full Stack Development using multiple tools and frameworks.
           <br/>
           <br/>
-          Some of the Frameworks that I have worked with are :
+          Some of the Tech Stack that I have worked with are :
           <br />
           <div className="toolsList">
             <ol>
