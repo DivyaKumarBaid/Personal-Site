@@ -12,10 +12,28 @@ export default function About() {
                 <div className="hrLine"></div>
             </div>
               <div className="aboutPara">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nesciunt pariatur nihil expedita hic a ducimus. Deleniti dolorum nulla officia fugit earum iure doloribus dolorem cupiditate animi nihil! Neque, porro.
-                  Minima eos accusamus deserunt quidem accusantium ducimus mollitia! Possimus nobis tempore sed alias dolores odio laudantium! Tempore animi labore inventore repellendus est? Enim aliquam adipisci odit quae accusamus consequatur vel!
-                  Molestias repellat consequuntur non ipsam unde iusto distinctio quod dicta asperiores deleniti reiciendis facere assumenda, corporis perspiciatis debitis quo totam, consectetur facilis veritatis esse omnis, atque sit! Ipsum, inventore cumque!
-              </div>
+                Hi, my name is <span className="highlight"> Divya Kumar Baid</span> and I find WEB a cause for living as it is live. I am currently pursuing B.Tech in Computer Science and Engineering from Techno Main Salt Lake, India. I crave for problems related to Tech and enjoy solving them. I found my passion right when we were being taught HTML & CSS in Middle School. Back then I really did wonder how google works.
+                <br/>
+                <br/>
+          Fast Forward to today I am a working member of a student led Technical Club CUrBrain of Techno Main Salt Lake. I have participated in several Hackathons and have experience in Full Stack Development using multiple tools and frameworks.
+          <br/>
+          <br/>
+          Some of the Frameworks that I have worked with are :
+          <br />
+          <div className="toolsList">
+            <ol>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Java</li>
+            </ol>
+            <ol>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>FastAPI</li>
+            </ol>
+          </div>
+
+          </div>
           </div>
           <div className='aboutImg'>
               <img src="/assets/logo.svg" alt="" />

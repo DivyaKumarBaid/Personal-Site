@@ -455,6 +455,21 @@
   transition-delay: 0.8s;
 }
 
+.highlight{
+  color:var(--pinkred);
+  font-weight: 500;
+}
+.toolsList ol li::marker {
+  content: "▶";
+  color: var(--pinkred);
+  font-size: 0.5em;
+}
+.toolsList{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* about animation */
 
 /* about */
