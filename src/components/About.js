@@ -5,9 +5,9 @@ export default function About() {
       <div className='aboutSection'>
           <div className="headingAbout">
             <div className="titleAbout">
-                <div>
-                <span className='aboutNo'>01.</span>
-                <span className='aboutHead'>About Me</span>
+                <div className='animateThis'>
+                  <span className='aboutNo'>01.</span>
+                  <span className='aboutHead'>About Me</span>
                 </div>
                 <div className="hrLine"></div>
             </div>

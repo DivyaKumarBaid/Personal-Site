@@ -441,7 +441,7 @@
 }
 
 /* about animation */
-.aboutSection{
+/* .aboutSection{
   opacity: 0;
   visibility: hidden;
   transform: translateY(-15px);
@@ -454,6 +454,46 @@
   transform:translateY(15px);
   transition: transform 1s,opacity 1s,visibility 1s;
   transition-delay: 0.8s;
+} */
+.animateThis,.aboutPara{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+  transition: transform 1s,opacity 1s,visibility 1s;
+}
+.hrLine,.toolsList{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-30px);
+  transition: transform 1s,opacity 1s,visibility 1s;
+}
+
+
+.aboutSection[data-scroll='in'] .hrLine,.aboutSection[data-scroll='in'] .toolsList{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+  transition: transform 1s,opacity 1s,visibility 1s;
+}
+.aboutSection[data-scroll='in'] .hrLine{
+  transition-delay: 0.4s;
+}
+
+.aboutSection[data-scroll='in'] .toolsList{
+  transition-delay: 1s;
+}
+
+.aboutSection[data-scroll='in'] .animateThis,.aboutSection[data-scroll='in'] .aboutPara{
+  opacity: 1;
+  visibility: visible;
+  transform:translateY(0px);
+  transition: transform 1s,opacity 1s,visibility 1s;
+}
+.aboutSection[data-scroll='in'] .animateThis{
+  transition-delay: 0.2s;
+}
+.aboutSection[data-scroll='in'] .aboutPara{
+  transition-delay: 0.6s;
 }
 
 .highlight{
