@@ -15,7 +15,7 @@ const Works = () => {
             <div className="workCardContainer">
                 {project.map((data, idx) => {
                     return (
-                        <WorkCard name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx%2===0 ? false : true} />
+                        <WorkCard name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
                     )
                 })}
             </div>

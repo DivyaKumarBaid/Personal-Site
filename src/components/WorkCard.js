@@ -4,7 +4,7 @@ import {VscGithubAlt} from 'react-icons/vsc'
 const WorkCard = (props) => {
     return (
         <div className='cardWrapper'>
-            <div className={props.left?'projectImageLeft':'projectImage'}>
+            <div className={props.left ? 'projectImageLeft' : 'projectImage'} style={{backgroundImage:`url("${props.image}")`}}>
             </div>
             <div className={props.left?'projectDetailsLeft':'projectDetails'}>    
                 <div className="featured">Featured Project</div>

@@ -546,6 +546,10 @@
   height: 50vh;
 }
 .projectImage{
+  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.18);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 80%;
   height: 100%;
   background-color: var(--backgorundLight);
@@ -571,7 +575,7 @@
 }
 .projectName{
   font-family: 'LemonMilkMedium','Martel Sans';
-  color: var(--light2);
+  color: var(--light1);
   letter-spacing: 5px;
   font-size: 1.6em;
   margin: 4px 0px 15px 0px;
@@ -579,7 +583,7 @@
 
 .projectDescription{
   background-color: var(--backgorundCard);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
   border-radius: 5px;
   padding: 20px 20px 20px 20px;
   color: var(--light2);
@@ -592,6 +596,10 @@
   font-size: 0.9em;
   font-family: 'Space Mono',monospace;
   margin: 12px 0px 12px 12px;
+  cursor: pointer;
+}
+.tech:hover{
+  color: var(--light1);
 }
 /* right */
 /* left */
@@ -602,6 +610,10 @@
   background-color: var(--backgorundLight);
   border-radius: 5px;
   left:45vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.18);
 }
 .projectDetailsLeft{
   position: relative;
@@ -614,6 +626,10 @@
   width: 37vw;
   height: 50vh;
 
+}
+
+.projectDetailsLeft .projectDescription{
+  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.3);
 }
 .projectDetailsLeft .tech{
   margin: 0px 15px 0px 0px;
