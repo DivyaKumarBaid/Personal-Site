@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkCard from './WorkCard';
+import project from './project';
 
 const Works = () => {
     return (
@@ -12,8 +13,11 @@ const Works = () => {
                 <div className="hrLineWork"></div>
             </div>
             <div className="workCardContainer">
-                <WorkCard name={"Discord-Bot"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni quis, odio cupiditate consequuntur magnam! Excepturi laudantium similique facere voluptates. Amet illo sit sunt perspiciatis officiis culpa aliquid quaerat porro."} tech={["VS-CODE", "Python", "Discord"]} link={"www.google.com"} />
-                
+                {project.map((data, idx) => {
+                    return (
+                        <WorkCard name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx%2===0 ? false : true} />
+                    )
+                })}
             </div>
         </div>
     );

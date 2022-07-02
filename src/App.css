@@ -75,7 +75,7 @@
 }
 
 .App {
-  height: 500vh;
+  /* height: 500vh; */
   width: 100%;
   background: var(--backgorund);
 }
@@ -534,13 +534,13 @@
 .hrLineWork{
   width: 50%;
 }
-/* work card */
+/* work card right*/
 .workCardContainer{
   width: 65%;
   /* 65vw */
 }
 .cardWrapper{
-  margin: 15px 0px;
+  margin: 12vh 0vh;
   display: flex;
   width: 75%;
   height: 50vh;
@@ -576,11 +576,12 @@
   font-size: 1.6em;
   margin: 4px 0px 15px 0px;
 }
+
 .projectDescription{
   background-color: var(--backgorundCard);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
   border-radius: 5px;
-  padding: 15px;
+  padding: 20px 20px 20px 20px;
   color: var(--light2);
 }
 .techStack{
@@ -592,6 +593,66 @@
   font-family: 'Space Mono',monospace;
   margin: 12px 0px 12px 12px;
 }
+/* right */
+/* left */
+.projectImageLeft{
+  position: absolute;
+  width: 37vw;
+  height: 50vh;
+  background-color: var(--backgorundLight);
+  border-radius: 5px;
+  left:45vw;
+}
+.projectDetailsLeft{
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+  width: 37vw;
+  height: 50vh;
+
+}
+.projectDetailsLeft .tech{
+  margin: 0px 15px 0px 0px;
+}
+/* left */
+
+/* animation work card */
+
+.projectImageLeft,.projectDetails{
+  transform:translateX(50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transition-delay: 0.3s;
+}
+.projectImageLeft[data-scroll='in'],.projectDetails[data-scroll='in']{
+  transform:translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s;
+  transition-delay: 0.3s;
+}
+.projectImage,.projectDetailsLeft{
+  transform:translateX(-50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transition-delay: 0.3s;
+}
+.projectImage[data-scroll='in'],.projectDetailsLeft[data-scroll='in']{
+  transform:translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s;
+  transition-delay: 0.3s;
+}
+
+
+/* animation work card */
 /* work card */
 /* Work */
 
