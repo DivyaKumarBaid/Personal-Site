@@ -391,37 +391,33 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  /* color: white; */
 }
 .headingAbout{
   max-width: 45vw;
   padding: 45px;
 }
-.headingAbout hr{
-  color: var(--pinkred);
-}
-.titleAbout{
+.titleAbout,.titleWork{
   letter-spacing: 2px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.hrLine{
+.hrLine,.hrLineWork{
   margin: 15px;
   width: 50%;
   height: 2px;
   background-color: var(--pinkred);
   opacity: 0.6;
 }
-.aboutNo{
+.aboutNo,.workNo{
   color: var(--pinkred);
   font-size: 25px;
   font-family: 'Space Mono', monospace;
   letter-spacing: 2px;
 }
-.aboutHead{
+.aboutHead,.workHead{
   margin-left: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
@@ -439,42 +435,27 @@
 .aboutImg img{
   width: 18vw;
 }
-
-/* about animation */
-/* .aboutSection{
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-15px);
-  transition: transform 1s,opacity 1s,visibility 1s;
-  transition-delay: 0.8s;
-}
-.aboutSection[data-scroll='in']{
-  opacity: 1;
-  visibility: visible;
-  transform:translateY(15px);
-  transition: transform 1s,opacity 1s,visibility 1s;
-  transition-delay: 0.8s;
-} */
-.animateThis,.aboutPara{
+/* about us animation */
+.animateThis,.aboutPara,.animateThisWork{
   opacity: 0;
   visibility: hidden;
   transform: translateY(-15px);
   transition: transform 1s,opacity 1s,visibility 1s;
 }
-.hrLine,.toolsList{
+.hrLine,.toolsList,.hrLineWork{
   opacity: 0;
   visibility: hidden;
   transform: translateX(-30px);
   transition: transform 1s,opacity 1s,visibility 1s;
 }
 
-.aboutSection[data-scroll='in'] .hrLine,.aboutSection[data-scroll='in'] .toolsList{
+.aboutSection[data-scroll='in'] .hrLine,.workSection[data-scroll='in'] .hrLineWork,.aboutSection[data-scroll='in'] .toolsList{
   opacity: 1;
   visibility: visible;
   transform: translateX(0px);
   transition: transform 1s,opacity 1s,visibility 1s;
 }
-.aboutSection[data-scroll='in'] .hrLine{
+.aboutSection[data-scroll='in'] .hrLine,.workSection[data-scroll='in'] .hrLineWork{
   transition-delay: 0.4s;
 }
 
@@ -482,13 +463,13 @@
   transition-delay: 1s;
 }
 
-.aboutSection[data-scroll='in'] .animateThis,.aboutSection[data-scroll='in'] .aboutPara{
+.aboutSection[data-scroll='in'] .animateThis,.workSection[data-scroll='in'] .animateThisWork,.aboutSection[data-scroll='in'] .aboutPara{
   opacity: 1;
   visibility: visible;
   transform:translateY(0px);
   transition: transform 1s,opacity 1s,visibility 1s;
 }
-.aboutSection[data-scroll='in'] .animateThis{
+.aboutSection[data-scroll='in'] .animateThis,.workSection[data-scroll='in'] .animateThisWork{
   transition-delay: 0.2s;
 }
 .aboutSection[data-scroll='in'] .aboutPara{
@@ -511,15 +492,42 @@
   flex-direction: row;
 }
 .toolsList ol{
+  margin-top: 1vh;
   margin-right: 15vw;
 }
 .toolsList ol li{
+  color: var(--light2);
   padding-left: 12px;
+  margin-top: 1vh;
 }
 
 /* about animation */
 
 /* about */
+
+/* Work */
+
+.workSection{
+  margin-top: 25vh;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.titleWork{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hrLineWork{
+  width: 60%;
+}
+
+/* Work */
 
 /* optimise for phone */
 
@@ -578,10 +586,13 @@
     width: 100%;
     max-width: 100%;
   }
-  .aboutHead{
+  .headingAbout{
+    padding: 35px;
+  }
+  .aboutHead,.workHead{
     font-size:4.8vw;
   }
-  .aboutNo{
+  .aboutNo,.workNo{
     font-size: 3vw;
   }
   .aboutImg{
@@ -596,12 +607,15 @@
     width: 50%;
   }
 
-  .aboutPara{
-    text-align: left;
-  }
-  
   .hrLine{
     width: 40%;
   }
   /* about */
+
+  /* work */
+  .titleWork{
+    width: 90%;
+  }
+  
+  /* work */
 }

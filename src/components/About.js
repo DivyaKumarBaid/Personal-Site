@@ -18,18 +18,20 @@ export default function About() {
           Fast Forward to today I am a working member of a student led Technical Club CUrBrain of Techno Main Salt Lake. I have participated in several Hackathons and have experience in Full Stack Development using multiple tools and frameworks.
           <br/>
           <br/>
-          Some of the Tech Stack that I have worked with are :
+          Some of the Tech Stack and tools that I have worked with are :
           <br />
           <div className="toolsList">
             <ol>
               <li>C++</li>
               <li>Python</li>
               <li>Java</li>
+              <li>PHP</li>
             </ol>
             <ol>
               <li>JavaScript</li>
               <li>React</li>
               <li>FastAPI</li>
+              <li>Adobe Illustrator</li>
             </ol>
           </div>
 
