@@ -11,6 +11,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* font-family: 'Roboto Mono', monospace; */
 /* google fonts */
 
 [data-scroll] {
@@ -25,6 +29,7 @@
  
 :root {
   --backgorund: rgb(11, 17, 31);
+  --backgorundCard: rgba(21, 33, 59);
   --backgorundLight: rgb(35, 50, 87);
   --backgorundBlur: rgb(11, 17, 31,0.8);
   --white: #ffffff;
@@ -120,13 +125,13 @@
   margin-right: 4px;
 }
 
-.overlayIcons{
+.overlayIcons,.workLinks{
   transition: all 0.3s;
   font-size: 25px;
   color: var(--light3);  
 }
 
-.overlayIcons:hover,.emailAdd:hover{
+.overlayIcons:hover,.emailAdd:hover,.workLinks:hover{
   color: var(--pinkred);
   transition: all 0.3s;
 }
@@ -261,8 +266,8 @@
   transition: all 0.5s;
   width: 100%;
   height: 100%;
-  z-index: 999;
   position: fixed;
+  z-index: 1;
   background-color: var(--backgorundBlur);
   backdrop-filter: blur(5px);
 }
@@ -401,7 +406,7 @@
 .titleAbout,.titleWork{
   letter-spacing: 2px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .hrLine,.hrLineWork{
@@ -419,8 +424,8 @@
 }
 .aboutHead,.workHead{
   margin-left: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 35px;
+  font-family: 'MomCakeBold','LemonMilkBold','Montserrat', sans-serif;
+  font-size: 45px;
   color: var(--light2);
 }
 .aboutPara{
@@ -518,15 +523,76 @@
   flex-wrap: wrap;
 }
 .titleWork{
-  width: 75%;
+  width: 65%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+}
+.workHead{
+  font-size: 41px;
 }
 .hrLineWork{
-  width: 60%;
+  width: 50%;
+}
+/* work card */
+.workCardContainer{
+  width: 65%;
+  /* 65vw */
+}
+.cardWrapper{
+  margin: 15px 0px;
+  display: flex;
+  width: 75%;
+  height: 50vh;
+}
+.projectImage{
+  width: 80%;
+  height: 100%;
+  background-color: var(--backgorundLight);
+  border-radius: 5px;
+}
+.projectDetails{
+  position: absolute;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+  width: 37vw;
+  height: 50vh;
+  left:45vw;
 }
 
+.featured{
+  color: var(--pinkred);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+}
+.projectName{
+  font-family: 'LemonMilkMedium','Martel Sans';
+  color: var(--light2);
+  letter-spacing: 5px;
+  font-size: 1.6em;
+  margin: 4px 0px 15px 0px;
+}
+.projectDescription{
+  background-color: var(--backgorundCard);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
+  border-radius: 5px;
+  padding: 15px;
+  color: var(--light2);
+}
+.techStack{
+  margin: 15px 0px;
+}
+.tech{
+  color: var(--light3);
+  font-size: 0.9em;
+  font-family: 'Space Mono',monospace;
+  margin: 12px 0px 12px 12px;
+}
+/* work card */
 /* Work */
 
 /* optimise for phone */
@@ -590,7 +656,7 @@
     padding: 35px;
   }
   .aboutHead,.workHead{
-    font-size:4.8vw;
+    font-size:7vw;
   }
   .aboutNo,.workNo{
     font-size: 3vw;
@@ -615,6 +681,9 @@
   /* work */
   .titleWork{
     width: 90%;
+  }
+  .hrLineWork{
+    width: 50%;
   }
   
   /* work */

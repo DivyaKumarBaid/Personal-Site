@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* defining local fonts */
+@font-face {
+  font-family: "LemonMilKBold";
+  src:url("./fonts/LemonMilkBold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LemonMilkMedium";
+  src:url("./fonts/LemonMilkMedium.otf") format("opentype");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "MomCakeBold";
+  src:url("./fonts/MomCakeBold.otf") format("opentype");
+  font-weight: bold;
+}
+/* defining local fonts */
+  
+
 body {
   background-color: rgb(16, 22, 35);
   margin: 0;
