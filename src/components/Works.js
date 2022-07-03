@@ -1,8 +1,25 @@
 import React from 'react';
 import WorkCard from './WorkCard';
 import project from './project';
+import WorkMobileCards from './WorkMobileCards'
 
 const Works = () => {
+
+    
+    const [width, setWidth] = React.useState(window.innerWidth);
+
+// listen to window resize for mobile view
+    React.useEffect(() => {
+        function handleResize() {
+          setWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return () => {
+          window.removeEventListener('resize', handleResize)
+        }
+    })
+// listen to window resize for mobile view
+
     return (
         <div className='workSection'>
             <div className="titleWork">
@@ -13,9 +30,14 @@ const Works = () => {
                 <div className="hrLineWork"></div>
             </div>
             <div className="workCardContainer">
-                {project.map((data, idx) => {
+                {width>900?project.map((data, idx) => {
                     return (
                         <WorkCard name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
+                    )
+                }) :
+                project.map((data, idx) => {
+                    return (
+                        <WorkMobileCards name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
                     )
                 })}
             </div>

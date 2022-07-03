@@ -38,6 +38,7 @@
   --maroon:#230911;
   --darkbrown:#510f1a; 
   --pinkred:#f74a59;
+  --projectImage:#f036450d;
   --light1:rgba(243, 241, 255, 1); 
   --light2:rgba(243, 241, 255, 0.8);
   --light3:rgba(243, 241, 255, 0.6);
@@ -642,34 +643,93 @@
   transform:translateX(50px);
   opacity: 0;
   visibility: hidden;
-  transition: all 1s;
+  transition: opacity 1s,transform 1s,visibility 1s;
   transition-delay: 0.3s;
 }
 .projectImageLeft[data-scroll='in'],.projectDetails[data-scroll='in']{
   transform:translateX(0px);
   opacity: 1;
   visibility: visible;
-  transition: all 1s;
+  transition: opacity 1s,transform 1s,visibility 1s;
   transition-delay: 0.3s;
 }
 .projectImage,.projectDetailsLeft{
   transform:translateX(-50px);
   opacity: 0;
   visibility: hidden;
-  transition: all 1s;
+  transition: opacity 1s,transform 1s,visibility 1s;
   transition-delay: 0.3s;
 }
 .projectImage[data-scroll='in'],.projectDetailsLeft[data-scroll='in']{
   transform:translateX(0px);
   opacity: 1;
   visibility: visible;
-  transition: all 1s;
+  transition: opacity 1s,transform 1s,visibility 1s;
   transition-delay: 0.3s;
 }
-
-
 /* animation work card */
+
+/* workcard for mobile */
+
+.workMobileContainer{
+  margin-top: 3vh;
+  width: 75vw;
+  height: 75vw;
+  border-radius: 5px;
+  background-color: var(--backgorundCard);
+  box-shadow: 0px 0px 15px rgb(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+.upperCard{
+  color: var(--light2);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:12px 12px 0px 12px;
+}
+.fork{
+  transform:rotate(90deg);
+}
+.workMobileContainer .featured{
+  font-size:12px;
+}
+.descContainer{
+  height: 100%;
+  margin: 18px;
+  text-align: justify;
+  hyphens: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+.projectTitleMobile{
+  color: var(--light1);
+  font-size: 15px;
+  font-family: 'LemonMilkMedium';
+  margin: 0px 0px 4px 0px;
+  letter-spacing: 2px;
+}
+.projectDescMobile{
+  font-size: 0.85em;
+  color: var(--light3);
+  letter-spacing: 0px;
+  margin: 5px 0px;
+}
+.techStackMobile{
+  margin: 4px 0px;
+}
+.techMobile{
+  font-size: 0.6em;
+  color: var(--light4);
+  margin: 4px 12px 4px 0px;
+}
+
+/* workcard for mobile */
+
 /* work card */
+
 /* Work */
 
 /* optimise for phone */
@@ -764,4 +824,15 @@
   }
   
   /* work */
+}
+
+@media screen and (max-width:900px) {  
+  .workCardContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
