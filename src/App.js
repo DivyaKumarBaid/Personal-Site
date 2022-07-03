@@ -8,6 +8,7 @@ import React from 'react';
 import Mobile from './components/Mobile';
 import About from './components/About';
 import Works from './components/Works';
+import Model from './components/Model';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Home />
       <About />
       <Works />
+      <Model/>
     </div>
   );
 }

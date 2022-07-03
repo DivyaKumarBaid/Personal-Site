@@ -1,4 +1,5 @@
 import React from 'react'
+import Model from './Model'
 
 export default function About() {
   return (
@@ -38,7 +39,7 @@ export default function About() {
           </div>
           </div>
           <div className='aboutImg'>
-              <img src="/assets/logo.svg" alt="" />
+              <Model/>
           </div>
     </div>
   )

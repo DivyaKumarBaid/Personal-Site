@@ -397,12 +397,13 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .headingAbout{
   max-width: 45vw;
-  padding: 45px;
+  height: 100%;
+  padding: 25px;
 }
 .titleAbout,.titleWork{
   letter-spacing: 2px;
@@ -430,6 +431,7 @@
   color: var(--light2);
 }
 .aboutPara{
+  font-size: 16px;
   margin-top: 20px;
   text-align: justify;
   hyphens: auto;
@@ -437,10 +439,13 @@
   letter-spacing: 5px;
 }
 .aboutImg{
-  width: max-content;
+  width: 30vw;
+  height: 80vh;
 }
 .aboutImg img{
   width: 18vw;
+  position: relative;
+  z-index: 9;
 }
 /* about us animation */
 .animateThis,.aboutPara,.animateThisWork{
@@ -750,6 +755,22 @@
 
 /* Work */
 
+
+
+.threemodel{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modelContainer{
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+
 /* optimise for phone */
 
 @media screen and (max-width:600px) {  
@@ -771,9 +792,6 @@
   /* nav */
 
   /* home */
-  .home{ 
-    height: 70vh;
-  }
   .greet{
     line-height:4.5vh;
     font-size: 2vh;
@@ -807,6 +825,7 @@
     width: 100%;
     max-width: 100%;
   }
+
   .headingAbout{
     padding: 35px;
   }
@@ -817,16 +836,24 @@
     font-size: 3vw;
   }
   .aboutImg{
-    margin:30px;
+    /* margin:30px; */
     margin-top:60px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .aboutImg{
+    height: 50vh;
+  }
   .aboutImg img{
     width: 50%;
   }
+  .aboutPara{
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-align: justify;
+  }  
 
   .hrLine{
     width: 40%;
@@ -852,5 +879,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .workSection{
+    padding-bottom: 10vh;
+    margin-top: 15vh;
   }
 }
