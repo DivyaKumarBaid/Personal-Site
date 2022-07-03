@@ -9,12 +9,13 @@ import Mobile from './components/Mobile';
 import About from './components/About';
 import Works from './components/Works';
 import Contact from './components/Contact';
+import MadeWithLove from './components/MadeWithLove';
 
 function App() {
 
   useEffect(() => {
     ScrollOut({
-      targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage,.workMobileContainer'
+      targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage,.workMobileContainer,.contactSection'
     });
   }, []);
   
@@ -30,7 +31,8 @@ function App() {
       <Home />
       <About />
       <Works />
-      <Contact/>
+      <Contact />
+      <MadeWithLove/>
     </div>
   );
 }
