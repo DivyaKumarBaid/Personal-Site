@@ -8,7 +8,7 @@ import React from 'react';
 import Mobile from './components/Mobile';
 import About from './components/About';
 import Works from './components/Works';
-import Model from './components/Model';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
       <Home />
       <About />
       <Works />
-      <Model/>
+      <Contact/>
     </div>
   );
 }
