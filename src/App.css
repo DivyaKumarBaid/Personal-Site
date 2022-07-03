@@ -103,13 +103,14 @@
 }
 
 .overlayRight{
+  position: relative;
   margin-top: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color:var(--light3);
-  margin-left:85vw;
+  left:85vw;
 }
 .emailAdd{
   transform: rotate(90deg);
@@ -794,7 +795,7 @@
   margin: 30px;
   width: 45%;
   text-align: center;
-  color: var(--light3);
+  color: var(--light4);
   letter-spacing: 3px;
 }
 .socials{
@@ -809,6 +810,12 @@
 }
 .socialEmail{
   font-size: 1.4em;
+}
+.socialEmail:hover{
+  color: var(--pinkred);
+}
+.socials a{
+  color: var(--light4);
 }
 .socials a:hover{
   color: var(--pinkred);
@@ -913,6 +920,23 @@
   }
   
   /* work */
+  /* contact */
+  .contactMe{
+    font-size: 15px;
+  }
+  .touch{
+    font-size: 25px;
+  }
+  .getDesc{
+    width: 80%;
+    font-size: 18px;
+  }
+  .socials{
+    width: 80%;  
+  }
+
+  /* contact */
+
 }
 
 @media screen and (max-width:900px) {  

@@ -15,7 +15,7 @@ export default function Contact() {
               If you have made it so far, just ping me up on any of the socials or email to get in touch and I would try to reply as soon as possible.
           </div>
           <div className="socials">
-              <a href=""><BsGithub /></a>
+              <a href="www.google.com"><BsGithub /></a>
               <a href=""><BsLinkedin/></a>
               <a href=""><MdEmail className='socialEmail'/></a>
           </div>
