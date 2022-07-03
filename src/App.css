@@ -432,6 +432,7 @@
 .aboutPara{
   margin-top: 20px;
   text-align: justify;
+  hyphens: auto;
   color: var(--light4);
   letter-spacing: 5px;
 }
@@ -725,6 +726,23 @@
   color: var(--light4);
   margin: 4px 12px 4px 0px;
 }
+
+/*animation mobile view */
+
+.workMobileContainer{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-30px);
+  transition: transform 1s,visibility 1s,opacity 1s;
+}
+.workMobileContainer[data-scroll='in']{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+  transition: transform 1s,visibility 1s,opacity 1s;
+}
+
+/*animation mobile view */
 
 /* workcard for mobile */
 

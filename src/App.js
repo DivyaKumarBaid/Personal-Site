@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     ScrollOut({
-      targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage'
+      targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage,.workMobileContainer'
     });
   }, []);
   
