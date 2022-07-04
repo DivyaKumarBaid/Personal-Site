@@ -5,10 +5,11 @@ import {VscGithubAlt} from 'react-icons/vsc'
 
 const WorkMobileCards = (props) => {
     return (
+        <a href={props.link}>
         <div className='workMobileContainer'>
             <div className="upperCard">
                 <IoIosGitNetwork className="fork"/>
-                <a href={props.link}><VscGithubAlt/></a>
+                <VscGithubAlt/>
             </div>
             <div className="descContainer">
                 <div className="projectTitleMobile">
@@ -23,7 +24,8 @@ const WorkMobileCards = (props) => {
                     })}
                 </div>
             </div>
-        </div>
+            </div>
+        </a>
     );
 }
 

@@ -21,7 +21,7 @@ const Works = () => {
 // listen to window resize for mobile view
 
     return (
-        <div className='workSection'>
+        <div className='workSection' id="work">
             <div className="titleWork">
                 <div className='animateThisWork'>
                   <span className='workNo'>02.</span>

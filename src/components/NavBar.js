@@ -22,21 +22,21 @@ const NavBar = (props) => {
         <div className='navbar'>
             <img src="/assets/logo.svg" alt="" className='navLogo' />
             {width>600 ? <div className="navSections">
-                    <a href="www.google.com" className="navLinks about">
+                    <a href="#about" className="navLinks about">
                         <span className="numbering">    01.
                         </span>
                         <span className="listItem">
                             About
                         </span>
                     </a>
-                    <a href="" className="navLinks works">
+                    <a href="#work" className="navLinks works">
                         <span className="numbering">    02.
                         </span>
                         <span className="listItem">
                             Works
                         </span>
                     </a>
-                    <a href="" className="navLinks contact">
+                    <a href="#contact" className="navLinks contact">
                         <span className="numbering">    03.
                         </span>
                         <span className="listItem">

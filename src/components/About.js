@@ -3,7 +3,7 @@ import Model from './Model'
 
 export default function About() {
   return (
-      <div className='aboutSection'>
+      <div className='aboutSection' id="about">
           <div className="headingAbout">
             <div className="titleAbout">
                 <div className='animateThis'>
