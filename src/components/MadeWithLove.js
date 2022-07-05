@@ -4,7 +4,7 @@ const MadeWithLove = () => {
     return (
         <div className='made'>
             <div className='tag'>Made with ❤️ by Divya Kumar Baid</div>
-            <div className='repoLink'><a href=""><span>Github Link</span></a></div>
+            <div className='repoLink'><a href="https://github.com/DivyaKumarBaid/Personal-Site"><span>Github Link</span></a></div>
         </div>
     );
 }
