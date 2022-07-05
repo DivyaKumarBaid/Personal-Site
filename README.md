@@ -11,10 +11,7 @@
 ## Description
 
 A simple Portfolio created using ReactJs
-
-<br>
-<br>
-
+Vist [here](https://divyakrbaid-tech-divyakumarbaid.vercel.app/)
 ---
 
 ## Forking and Hosting
@@ -24,4 +21,4 @@ Host it on vercel after cloning and editing the repository.
 
 
 For any other Questions raise an issue and I will try to solve you problem.
-This site is inspired from Brittney[https://brittanychiang.com/#contact]
+This site is inspired from [Brittney](https://brittanychiang.com/#contact)
