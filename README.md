@@ -4,7 +4,7 @@
 <h1>Personal Webpage</h1><h4>My own portfolio<h4>
 <br>
 
-[![GitHub license](https://img.shields.io/github/license/DivyaKumarBaid/Personal-Site?color=e63946&logo=Big%20Cartel&logoColor=white&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/DivyaKumarBaid/Personal-Site?logo=JFrog%20Bintray&logoColor=white&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/network) [![GitHub stars](https://img.shields.io/github/stars/DivyaKumarBaid/Personal-Site?color=%23ffcb77&logo=Apache%20Spark&logoColor=yellow&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/stargazers)
+[![GitHub license](https://img.shields.io/github/license/DivyaKumarBaid/Personal-Site?color=e63946&logo=Big%20Cartel&logoColor=white&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/blob/main/LICENSE.md) [![GitHub forks](https://img.shields.io/github/forks/DivyaKumarBaid/Personal-Site?logo=JFrog%20Bintray&logoColor=white&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/network) [![GitHub stars](https://img.shields.io/github/stars/DivyaKumarBaid/Personal-Site?color=%23ffcb77&logo=Apache%20Spark&logoColor=yellow&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/stargazers)
 
 </p>
 
