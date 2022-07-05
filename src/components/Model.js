@@ -8,7 +8,7 @@ export default function Model(props) {
   return (
     <div className="threemodel">
       <div className="modelContainer">
-        {isMobile ? <Spline scene={mobileLink} />:
+        {isMobile ? <Spline scene={mobileLink} onLoad={() => setTimeout(() => props.toggle(),3000)} />:
           <Spline scene={pcLink} onLoad={() => setTimeout(() => props.toggle(),3000)}/>}
       </div>
     </div>

@@ -31,13 +31,7 @@ function App() {
       direction: 'alternate',
       loop: true
     })
-    
-    .add({
-      targets: ".p1,.p2,.p3",
-      opacity: 0,
-      duration: 1100,
-    })
-    
+      
     ScrollOut({
       targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage,.workMobileContainer,.contactSection'
     });
@@ -46,6 +40,8 @@ function App() {
   
   const [menu, setMenu] = React.useState(false);
   const toggleMenu = () => setMenu(old => !old);
+
+  console.log(loading)
 
   return (
       <div className="App">
