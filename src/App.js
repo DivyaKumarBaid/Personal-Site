@@ -19,19 +19,15 @@ function App() {
   const toggleLoading = () => { setLoading(false); }
   
   useEffect(() => {
-    const t = anime.timeline({ 
-      loop: true
-  })
-  t
-    .add({
+    anime({ 
+      loop: true,
       targets: ".p1,.p2,.p3",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuad',
-      duration: 2000,
+      duration: 1500,
       direction: 'alternate',
       loop: true
-    })
-      
+  })
     ScrollOut({
       targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage,.workMobileContainer,.contactSection'
     });
@@ -40,8 +36,6 @@ function App() {
   
   const [menu, setMenu] = React.useState(false);
   const toggleMenu = () => setMenu(old => !old);
-
-  console.log(loading)
 
   return (
       <div className="App">
