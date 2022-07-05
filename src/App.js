@@ -10,30 +10,61 @@ import About from './components/About';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import MadeWithLove from './components/MadeWithLove';
+import Loader from './components/Loader';
+import anime from 'animejs';
+
 
 function App() {
-
+  const [loading, setLoading] = React.useState(true);
+  const toggleLoading = () => { setLoading(false); }
+  
   useEffect(() => {
+    const t = anime.timeline({ 
+      loop: true
+  })
+  t
+    .add({
+      targets: ".p1,.p2,.p3",
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutQuad',
+      duration: 2000,
+      direction: 'alternate',
+      loop: true
+    })
+    
+    .add({
+      targets: ".p1,.p2,.p3",
+      opacity: 0,
+      duration: 1100,
+    })
+    
     ScrollOut({
       targets: '.navLinks,.navLogo,.home,.aboutSection,.workSection,.projectDetailsLeft,.projectDetails,.projectImageLeft,.projectImage,.workMobileContainer,.contactSection'
     });
-  }, []);
+  }, [loading]);
+
   
   const [menu, setMenu] = React.useState(false);
-
   const toggleMenu = () => setMenu(old => !old);
 
   return (
-    <div className="App">
-      {menu && <Mobile toggle={toggleMenu} />}
-      <Overlay />
-      <NavBar toggle={toggleMenu} />
-      <Home />
-      <About />
-      <Works />
-      <Contact />
-      <MadeWithLove/>
-    </div>
+      <div className="App">
+      {loading && <Loader/>}
+      {!loading && <>
+        {menu && <Mobile toggle={toggleMenu} />}
+        <Overlay />
+        <NavBar toggle={toggleMenu} />
+        <Home />
+        </>}
+      <About toggle={toggleLoading} />
+      {!loading && <>
+        <Works />
+        <Contact />
+        <MadeWithLove />
+      </>}
+      
+      </div>
+    
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Model from './Model'
 
-export default function About() {
+export default function About(props) {
   return (
       <div className='aboutSection' id="about">
           <div className="headingAbout">
@@ -39,7 +39,7 @@ export default function About() {
           </div>
           </div>
           <div className='aboutImg'>
-              <Model/>
+          <Model toggle={props.toggle} />
           </div>
     </div>
   )

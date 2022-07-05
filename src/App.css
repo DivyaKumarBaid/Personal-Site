@@ -83,6 +83,26 @@ html{
   width: 100%;
   background: var(--backgorund);
 }
+/* loader */
+.Loader{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 110;
+  background-color: var(--backgorund);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loaderSvg{
+  width: 150px;
+}
+.loaderSvg path{
+  z-index: 111;
+  stroke-dasharray:1000;
+  stroke-dashoffset:0;
+}
+/* loader */
 
 /* overlay */
 .overlay{
@@ -90,6 +110,12 @@ html{
   justify-content: space-between;
   align-items: flex-start;
   position: fixed;
+  animation-name: overlayAnime;
+  animation-duration: 1s;
+}
+@keyframes overlayAnime {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 .overlayLeft{
