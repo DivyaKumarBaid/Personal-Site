@@ -595,7 +595,7 @@ html{
   height: 50vh;
 }
 .projectImage{
-  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.18);
+  box-shadow: -3px -3px 15px rgba(31, 31, 31, 0.18);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -632,7 +632,7 @@ html{
 
 .projectDescription{
   background-color: var(--backgorundCard);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
+  box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.28);
   border-radius: 5px;
   padding: 20px 20px 20px 20px;
   color: var(--light2);
@@ -662,7 +662,7 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.18);
+  box-shadow: 3px 3px 15px rgba(31, 31, 31, 0.18);
 }
 .projectDetailsLeft{
   position: relative;
@@ -678,7 +678,7 @@ html{
 }
 
 .projectDetailsLeft .projectDescription{
-  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px -5px 15px rgba(31, 31, 31, 0.3);
 }
 .projectDetailsLeft .tech{
   margin: 0px 15px 0px 0px;
