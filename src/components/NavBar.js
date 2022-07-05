@@ -20,7 +20,7 @@ const NavBar = (props) => {
 
     return (
         <div className='navbar'>
-            <img src="/assets/logo.svg" alt="" className='navLogo' />
+            <a href="#home"> <img src="/assets/logo.svg" alt="" className='navLogo' /></a>
             {width>600 ? <div className="navSections">
                     <a href="#about" className="navLinks about">
                         <span className="numbering">    01.
