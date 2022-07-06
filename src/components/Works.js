@@ -1,6 +1,6 @@
 import React from 'react';
 import WorkCard from './WorkCard';
-import project from './project';
+import {project,teamProject} from './project';
 import WorkMobileCards from './WorkMobileCards'
 
 const Works = () => {
@@ -36,6 +36,24 @@ const Works = () => {
                     )
                 }) :
                 project.map((data, idx) => {
+                    return (
+                        <WorkMobileCards name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
+                    )
+                })}
+            </div>
+            <div className="titleWork">
+                <div className='animateThisWork'>
+                  <span className='workHead'>Team Projects</span>
+                </div>
+                <div className="hrLineWork"></div>
+            </div>
+            <div className="workCardContainer">
+                {width>900?teamProject.map((data, idx) => {
+                    return (
+                        <WorkCard name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
+                    )
+                }) :
+                teamProject.map((data, idx) => {
                     return (
                         <WorkMobileCards name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
                     )

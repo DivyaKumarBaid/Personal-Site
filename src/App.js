@@ -41,9 +41,9 @@ function App() {
       <div className="App">
       {loading && <Loader/>}
       {!loading && <>
-        {menu && <Mobile toggle={toggleMenu} />}
+        {menu && <Mobile toggle={toggleMenu}/>}
         <Overlay />
-        <NavBar toggle={toggleMenu} />
+        <NavBar toggle={toggleMenu}  />
         <Home />
         </>}
       <About toggle={toggleLoading} />

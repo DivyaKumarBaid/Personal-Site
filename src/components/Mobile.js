@@ -4,21 +4,22 @@ import { FiLinkedin } from 'react-icons/fi';
 import { VscGithubAlt } from 'react-icons/vsc';
 
 const Mobile = (props) => {
+
     return (
         <div className='mobileMenu'>
             <div className="closeContainer">
                 <IoClose onClick={() => { props.toggle() }} className="navClose" />
             </div>
             <div className="mobileList">
-                    <a href="www.google.com" className="mobileLinks aboutMobile">
+                    <a href="#about" className="mobileLinks aboutMobile">
                         <span className="numbering">01.</span>
                         <span className="listItem">About</span>
                     </a>
-                    <a href="" className="mobileLinks worksMobile">
+                    <a href="#work" className="mobileLinks worksMobile">
                         <span className="numbering">02.</span>
                         <span className="listItem">Works</span>
                     </a>
-                    <a href="" className="mobileLinks contactMobile">
+                    <a href="#contact" className="mobileLinks contactMobile">
                         <span className="numbering">03.</span>
                         <span className="listItem">Contact</span>
                     </a>
