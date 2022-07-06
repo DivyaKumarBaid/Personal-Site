@@ -722,7 +722,7 @@ html{
 .workMobileContainer{
   margin-top: 3vh;
   width: 75vw;
-  height: 75vw;
+  min-height: 75vw;
   border-radius: 5px;
   background-color: var(--backgorundCard);
   box-shadow: 0px 0px 15px rgb(0,0,0,0.2);
