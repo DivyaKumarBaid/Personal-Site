@@ -750,7 +750,7 @@ html{
   hyphens: auto;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content:space-between;
 }
 .projectTitleMobile{
   color: var(--light1);
