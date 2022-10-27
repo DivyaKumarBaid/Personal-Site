@@ -2,15 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  future: { webpack5: true },
 }
-
-// const withFonts = require('next-fonts');
-
-// module.exports = withFonts({
-//   enableSvg: true,
-//   webpack(config, options) {
-//     return config;
-//   }
-// });
 
 module.exports = nextConfig

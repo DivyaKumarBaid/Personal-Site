@@ -563,7 +563,7 @@
   dependencies:
     "react-merge-refs" "^1.1.0"
 
-"@splinetool/runtime@*":
+"@splinetool/runtime@*", "@splinetool/runtime@^0.9.132":
   "integrity" "sha512-/TVyXlZZcwgnRHdbRfYgtXaADBHQmlOvOscyCLPFLvMujNAua5zoxNaKsolktFd8xOOWGvPnLoz6PfHfOekLlQ=="
   "resolved" "https://registry.npmjs.org/@splinetool/runtime/-/runtime-0.9.132.tgz"
   "version" "0.9.132"
