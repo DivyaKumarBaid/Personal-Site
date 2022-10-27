@@ -1,25 +1,34 @@
-<p align="center"> 
-  
-<br>
-<h1>Personal Webpage</h1><h4>My own portfolio<h4>
-<br>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-[![GitHub license](https://img.shields.io/github/license/DivyaKumarBaid/Muso?color=e63946&logo=Big%20Cartel&logoColor=white&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/blob/main/LICENSE.md) [![GitHub forks](https://img.shields.io/github/forks/DivyaKumarBaid/Personal-Site?logo=JFrog%20Bintray&logoColor=white&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/network) [![GitHub stars](https://img.shields.io/github/stars/DivyaKumarBaid/Personal-Site?color=%23ffcb77&logo=Apache%20Spark&logoColor=yellow&style=for-the-badge)](https://github.com/DivyaKumarBaid/Personal-Site/stargazers)
+## Getting Started
 
-</p>
+First, run the development server:
 
-## Description
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-A simple Portfolio created using ReactJs
-Vist [here](https://divyakrbaid-tech-divyakumarbaid.vercel.app/)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Forking and Hosting
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-This Webpage can be forked and edited as it is build on Pure ReactJs and custom CSS.
-Host it on vercel after cloning and editing the repository.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Learn More
 
-For any other Questions raise an issue and I will try to solve you problem.
-This site is inspired from [Brittney](https://brittanychiang.com/#contact)
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
