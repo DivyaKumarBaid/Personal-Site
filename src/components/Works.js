@@ -50,12 +50,12 @@ const Works = () => {
             <div className="workCardContainer">
                 {width > 900 ? teamProject.map((data, idx) => {
                     return (
-                        <WorkCard name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
+                        <WorkCard key={idx} name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
                     )
                 }) :
                     teamProject.map((data, idx) => {
                         return (
-                            <WorkMobileCards name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
+                            <WorkMobileCards key={idx} name={data.name} description={data.description} tech={data.tech} link={data.link} left={idx % 2 === 0 ? false : true} image={data.image} />
                         )
                     })}
             </div>
