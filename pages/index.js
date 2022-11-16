@@ -2,6 +2,7 @@ import NavBar from '../src/components/NavBar';
 import Overlay from '../src/components/Overlay';
 import ScrollOut from "scroll-out";
 import { useEffect } from "react";
+import Head from 'next/head'
 import Home from '../src/components/Home';
 import React from 'react';
 import Mobile from '../src/components/Mobile';
@@ -37,6 +38,10 @@ export default function HomePage() {
 
   return (
     <div className="App">
+      <Head>
+        <title>My Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {loading && <Loader />}
       {!loading && <>
         {menu && <Mobile toggle={toggleMenu} />}
