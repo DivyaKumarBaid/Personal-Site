@@ -17,7 +17,7 @@ export const project = [
     {
         name: "DocType",
         description: "A hussle free online PDF editor where a user can easily edit pdf and download it according to their need. Based on NEXTJS, FabricJS it provides the perfect solution to day to day editor needed.",
-        link: "https://github.com/DivyaKumarBaid/Muso",
+        link: "https://github.com/DivyaKumarBaid/DocType",
         tech: ["NEXTJS", "FABRICJS", "REACT-PDF"],
         image: "/assets/doctype.gif"
     },
