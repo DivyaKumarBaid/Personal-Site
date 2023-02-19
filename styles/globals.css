@@ -397,6 +397,10 @@ html{
 
 .home{
   width: 100%;
+  background: url('../public/assets/homebg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   /* color: white; */
   text-align: left;
   height: 100vh;

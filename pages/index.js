@@ -35,13 +35,41 @@ export default function HomePage() {
 
   const [menu, setMenu] = React.useState(false);
   const toggleMenu = () => setMenu(old => !old);
+  const headerScrpit = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Divyakr Baid",
+    "url": "https://divyakrbaid.tech",
+    "sameAs": [
+      "https://twitter.com/divyakrbaid",
+      "https://www.linkedin.com/in/divyakrbaid",
+      "https://github.com/divyakrbaid"
+    ]
+  }
 
   return (
     <div className="App">
       <Head>
-        <title>My Portfolio</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Divyakr Baid - Developer</title>
+        <meta name="description" content="Personal portfolio of Divyakr Baid, a developer specializing in web and mobile technologies." />
+        <meta name="keywords" content="developer, portfolio, web development, mobile development, programming" />
+        <meta name="author" content="Divyakr Baid" />
+        <link rel="canonical" href="https://divyakrbaid.tech" />
+        <meta property="og:title" content="Divyakr Baid - Developer" />
+        <meta property="og:description" content="Personal portfolio of Divyakr Baid, a developer specializing in web and mobile technologies." />
+        <meta property="og:image" content="https://i.postimg.cc/ZqcP1LJQ/divyakrbaid.png" />
+        <meta property="og:url" content="https://divyakrbaid.tech" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Divyakr Baid - Developer" />
+        <meta name="twitter:description" content="Personal portfolio of Divyakr Baid, a developer specializing in web and mobile technologies." />
+        <meta name="twitter:image" content="https://i.postimg.cc/ZqcP1LJQ/divyakrbaid.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/assets/Logo.png" />
+        <script type="application/ld+json">
+          {headerScrpit}
+        </script>
       </Head>
+
       {loading && <Loader />}
       {!loading && <>
         {menu && <Mobile toggle={toggleMenu} />}
