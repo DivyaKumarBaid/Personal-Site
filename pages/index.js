@@ -35,17 +35,6 @@ export default function HomePage() {
 
   const [menu, setMenu] = React.useState(false);
   const toggleMenu = () => setMenu(old => !old);
-  const headerScrpit = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Divyakr Baid",
-    "url": "https://divyakrbaid.tech",
-    "sameAs": [
-      "https://twitter.com/divyakrbaid",
-      "https://www.linkedin.com/in/divyakrbaid",
-      "https://github.com/divyakrbaid"
-    ]
-  }
 
   return (
     <div className="App">
@@ -65,9 +54,6 @@ export default function HomePage() {
         <meta name="twitter:image" content="https://i.postimg.cc/ZqcP1LJQ/divyakrbaid.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/assets/Logo.png" />
-        <script type="application/ld+json">
-          {headerScrpit}
-        </script>
       </Head>
 
       {loading && <Loader />}
