@@ -69,7 +69,7 @@ export const Terminal = () => {
     }
 
     return (
-        <div className='w-[100%] h-[100%] overflow-auto p-4 text-xs text-slate-100 tracking-widest font-["Source_Code_Pro"] leading-5' onClick={() => document.getElementById("terminalInput").focus()} >
+        <div className='w-[100%] h-[100%] overflow-auto break-all p-4 text-xs text-slate-100 tracking-widest font-["Source_Code_Pro"] leading-5' onClick={() => document.getElementById("terminalInput").focus()} >
             {/* <ByDefault /> */}
             <div className="typeTerminal flex flex-col max-h-[100%] justify-start items-start">
                 {commands.map((item, idx) => {
@@ -82,8 +82,8 @@ export const Terminal = () => {
                         </div>
                     )
                 })}
-                <div className='flex items-center pb-[25%]'>
-                    <span className='!text-[rgb(0,255,0)]'>dkb2001@DivyaKrBaid:~$</span>
+                <div className='flex items-center pb-[25%] w-[100%]'>
+                    <span className='!text-[rgb(0,255,0)] min-w-[21%]'>dkb2001@DivyaKrBaid:~$</span>
                     <input
                         type="text"
                         id="terminalInput"

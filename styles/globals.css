@@ -863,7 +863,18 @@ html{
   color: var(--pinkred);
   font-family: 'Roboto Mono', monospace;
 }
+.contactMeNew{
+  margin: 10px;
+  color: var(--pinkred);
+  font-family: 'Roboto Mono', monospace;
+}
 .touch{
+  font-family: 'LemonMilkMedium';
+  font-size: 3em;
+  color: var(--light2);
+  letter-spacing: 5px;
+}
+.touchNew{
   font-family: 'LemonMilkMedium';
   font-size: 3em;
   color: var(--light2);
@@ -887,6 +898,12 @@ html{
   color: var(--light4);
 }
 .socials a:hover{
+  color: var(--pinkred);
+}
+.socialsNew a{
+  color: var(--light4);
+}
+.socialsNew a:hover{
   color: var(--pinkred);
 }
 
@@ -1198,7 +1215,7 @@ html{
   color: var(--light4);
   letter-spacing: 3px;
 }
-.socials,.contactDetails{
+.socialsNew,.contactDetails{
   margin: 15px;
   padding: 8px;
   font-size:1.5em ;
@@ -1350,4 +1367,9 @@ html{
     padding-bottom: 10vh;
     margin-top: 15vh;
   }
+}
+
+.New{
+  opacity: 1;
+  visibility: visible;
 }
