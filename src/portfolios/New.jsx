@@ -7,7 +7,8 @@ import { TaskBar } from "../NewComponents/TaskBar";
 import { Login } from "../NewComponents/Login";
 
 export default function New() {
-    const [loggedInNew, setLoggedInNew] = React.useState(true);
+    const [loggedInNew, setLoggedInNew] = React.useState(false);
+    const [onceClicked, setClicked] = React.useState(true);
     return (
         <>
             <Head>
@@ -35,7 +36,7 @@ export default function New() {
                             <Desktop />
                             <TaskBar />
                         </div> :
-                        <Login setLoggedIn={setLoggedInNew} />}
+                        <Login setLoggedIn={setLoggedInNew} onceClicked={onceClicked} setClicked={setClicked} />}
                 </TaskBarContextProvider>
             </div>
         </>

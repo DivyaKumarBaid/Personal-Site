@@ -3,10 +3,12 @@ import anime from 'animejs';
 import React from 'react'
 
 export const Login = (props) => {
+    React.useEffect(() => {
+        props.onceClicked && loginHandle();
+    })
 
-    const [onceClicked, setClicked] = React.useState(false);
     const loginHandle = () => {
-        setClicked(true);
+        props.setClicked(true);
         anime({
             loop: true,
             targets: ".p1,.p2,.p3",
@@ -18,6 +20,7 @@ export const Login = (props) => {
         })
         setTimeout(() => {
             props.setLoggedIn(true)
+            props.setClicked(false);
         }, 2000);
     }
 
@@ -34,10 +37,10 @@ export const Login = (props) => {
             </div>
             <div className='flex flex-col items-center gap-4 tracking-widest'>
                 {/* <h1>Welcome</h1> */}
-                <div className={`border bg-transparent p-2 flex justify-center items-center px-6 w-[10vw] text-center h-[6vh] rounded-md hover:bg-white cursor-pointer transition-all hover:text-black ${onceClicked && "border-none"} `} onClick={() => {
+                <div className={`border bg-transparent p-2 flex justify-center items-center px-6 w-[10vw] text-center h-[6vh] rounded-md hover:bg-white cursor-pointer transition-all hover:text-black ${props.onceClicked && "border-none"} `} onClick={() => {
                     loginHandle()
                 }}>
-                    {onceClicked ? <CircularProgress color="inherit" style={{ width: "25px", height: "25px" }} /> : <div className='text-sm font-["DM_Sans"]' >Login</div>}
+                    {props.onceClicked ? <CircularProgress color="inherit" style={{ width: "25px", height: "25px" }} /> : <div className='text-sm font-["DM_Sans"]' >Login</div>}
                 </div>
             </div>
         </div>
