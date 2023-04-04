@@ -1,16 +1,20 @@
 /* google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Space+Mono&family=DM+Sans:wght@400;500&family=Libre+Baskerville:wght@400;700&family=Roboto+Mono&family=Montserrat:wght@600;700&family=Rubik:wght@400;500;600;700&family=Yeseva+One&family=Source+Code+Pro&family=Yeseva+One&display=swap');
 
-/* font-family: 'Martel Sans', sans-serif; */
-/* font-family: 'Space Mono', monospace; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-/* font-family: 'Montserrat', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-/* font-family: 'Roboto Mono', monospace; */
+/* font-family: 'Martel Sans', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Yeseva One', cursive;
+font-family: 'Roboto Mono', monospace; */
 /* google fonts */
 
 
@@ -74,6 +78,10 @@ a {
 }
  
 :root {
+  --black-color:rgb(0,0,0);
+  --white-color:rgb(255,255,255);
+  --background-color:rgb(245,240,250);
+  --card-color:rgba(150,150,180,0.1);
   --backgorund: rgb(11, 17, 31);
   --backgorundCard: rgba(21, 33, 59);
   --backgorundLight: rgb(35, 50, 87);
@@ -100,18 +108,18 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(12, 16, 26);
+  background: rgb(50, 50, 50);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--darkbrown);
   border-radius:8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--pinkred);
+  background: rgb(80,80,80);
 }
 
 /* scroll bar */
@@ -672,13 +680,6 @@ html{
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
 }
-.projectName{
-  font-family: 'LemonMilkMedium','Martel Sans';
-  color: var(--light1);
-  letter-spacing: 5px;
-  font-size: 1.6em;
-  margin: 4px 0px 15px 0px;
-}
 
 .projectDescription{
   background-color: var(--backgorundCard);
@@ -876,16 +877,6 @@ html{
   color: var(--light4);
   letter-spacing: 3px;
 }
-.socials{
-  margin: 15px;
-  padding: 8px;
-  font-size:1.5em ;
-  color: var(--light4);
-  display: flex;
-  width: 45%;
-  justify-content: space-evenly;
-  align-items: center;
-}
 .socialEmail{
   font-size: 1.4em;
 }
@@ -947,6 +938,287 @@ html{
 .repoLink{display: inline;}
 
 /* footer */
+
+/* new portfolio */
+
+.App2{
+  background-color: black !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(50, 50, 50);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--darkbrown);
+  border-radius:8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(80,80,80);
+}
+
+/* scroll bar */
+
+*{
+  margin:0;
+  padding:0;
+}
+.desktop{
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/wallpaper.png'),rgb(0,0,0);
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.taskBar>*{
+  cursor:pointer;
+  transition:transform 0.3s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.taskBar>*:hover{
+  transform: translateY(-4px);
+  transition: transform 0.3s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.homeScreen img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.hoveringFolder:hover{
+  background: rgba(90,90,90,0.3) !important;
+}
+*,.folderText,.handleDrag{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.typeTerminal input{
+  margin-left: 8px;
+  background: transparent;
+  outline: none;
+}
+.typeTerminal input:focus{
+  border: none;
+}
+
+/* myself */
+
+.nameNew{
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 3.5vw;
+  letter-spacing: 2px;
+  color: var(--light1);
+}
+.occuNew{
+  font-size: 2.5vw;
+  color: var(--light3);
+  font-family: 'Martel Sans', sans-serif;
+  letter-spacing: 2px;
+}
+/* myself */
+
+/* workcard */
+.cardWrapperNew{
+  display: flex;
+  width: 100%;
+  height: 62vh;
+  align-items: center;
+}
+.projectDetailsLeftNew{
+  position: absolute;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex;
+  z-index: 99;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 15px;
+}
+.projectImageNew{
+  position: relative;
+  margin-left: 40%;
+  z-index: 1;
+  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.18);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 70%;
+  background-color: var(--backgorundLight);
+  border-radius: 5px;
+}
+.projectName{
+  font-family: 'Montserrat','Martel Sans';
+  font-weight: bolder;
+  color: var(--light1);
+  letter-spacing: 5px;
+  font-size: 1.6em;
+  margin: 4px 0px 15px 0px;
+}
+
+.projectDescriptionNew{
+  background-color: var(--backgorundCard);
+  border-radius: 5px;
+  max-width: 35vw;
+  font-family: "DM Sans";
+  /* padding: ; */
+  padding: 16px;
+  color: var(--light2);
+}
+/* workcard */
+
+/* spotify */
+.music-card{
+  display: flex;
+  flex-direction: column;
+  /* gap:30px; */
+  align-items: center;
+  background-color: var(--card-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(56,56,56,0.2);
+}
+
+.music-card-img{
+  width: 18vw;
+  height: 18vw;
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 8px rgba(56,56,56,0.6);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.controls-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.play-btn,.pause-btn{
+  cursor: pointer;
+  font-size: 40px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap:100px;
+  margin: 40px 0px 20px 0px;
+}
+.forward-btn,.back-btn{
+  font-size: 25px;
+  cursor: pointer;
+}
+/* spotify */
+
+/* animation */
+.loadingScreen{
+  background: url('/assets/loadingScreen.png');
+  /* background-position: top left; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.taskbarItems{
+  animation: transcend 0.5s;
+}
+@keyframes transcend {
+  0%{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.upperTaskBar,.Desktop,.lowerTaskBar,.loadingScreen{
+  animation: appear 0.3s;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/* animation */
+
+/* gallery */
+.gallery{
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+/* gallery */
+
+
+/* contact */
+
+.contactSectionNew{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.getDescNew{
+  font-size: 1.3em;
+  margin: 30px;
+  width: 80%;
+  text-align: center;
+  color: var(--light4);
+  letter-spacing: 3px;
+}
+.socials,.contactDetails{
+  margin: 15px;
+  padding: 8px;
+  font-size:1.5em ;
+  color: var(--light4);
+  display: flex;
+  width: 45%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactDetails{
+  width: 70%;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  justify-content: space-between;
+}
+/* contact */
+/* new portfolio */
 
 /* optimise for phone */
 
