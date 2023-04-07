@@ -30,13 +30,12 @@ export default function New() {
             </Head>
             <div className="App2 min-w-[100vw] min-h-[100vh] bg-black">
                 <TaskBarContextProvider>
-                    {loggedInNew ?
-                        <div className="desktop font-['DM_Sans']">
-                            <UpperTaskBar setLoggedIn={setLoggedInNew} />
-                            <Desktop />
-                            <TaskBar />
-                        </div> :
-                        <Login setLoggedIn={setLoggedInNew} onceClicked={onceClicked} setClicked={setClicked} />}
+                    {!loggedInNew && <Login setLoggedIn={setLoggedInNew} onceClicked={onceClicked} setClicked={setClicked} />}
+                    <div className="desktop font-['DM_Sans']">
+                        <UpperTaskBar setLoggedIn={setLoggedInNew} />
+                        <Desktop />
+                        <TaskBar />
+                    </div>
                 </TaskBarContextProvider>
             </div>
         </>
