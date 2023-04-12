@@ -1178,6 +1178,11 @@ html{
 .upperTaskBar,.Desktop,.lowerTaskBar,.loadingScreen{
   animation: appear 0.3s;
 }
+.Desktop{
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards
+}
 @keyframes appear {
   0%{
     opacity: 0;
